@@ -71,6 +71,8 @@ class NTLMSoapClient extends SoapClient
      */
     public function __doRequest($request, $location, $action, $version, $one_way = 0)
     {
+        $return_response = (0 === (int) $one_way);
+
         $headers = array(
             'Method: POST',
             'Connection: Keep-Alive',
@@ -107,7 +109,7 @@ class NTLMSoapClient extends SoapClient
             );
         }
 
-        return $response;
+        return $return_response ? $response : null;
     }
 
     /**
