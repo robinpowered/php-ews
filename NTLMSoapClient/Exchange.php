@@ -11,19 +11,6 @@
  */
 class NTLMSoapClient_Exchange extends NTLMSoapClient
 {
-    /**
-     * Username for authentication on the exchnage server
-     *
-     * @var string
-     */
-    protected $user;
-
-    /**
-     * Password for authentication on the exchnage server
-     *
-     * @var string
-     */
-    protected $password;
 
     /**
      * Constructor

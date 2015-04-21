@@ -44,6 +44,20 @@ class NTLMSoapClient extends SoapClient
     protected $validate = false;
 
     /**
+     * Username for authentication on the exchange server
+     *
+     * @var string
+     */
+    protected $user;
+
+    /**
+     * Password for authentication on the exchange server
+     *
+     * @var string
+     */
+    protected $password;
+
+    /**
      * Performs a SOAP request
      *
      * @link http://php.net/manual/en/function.soap-soapclient-dorequest.php
@@ -57,6 +71,8 @@ class NTLMSoapClient extends SoapClient
      */
     public function __doRequest($request, $location, $action, $version, $one_way = 0)
     {
+        $return_response = (0 === (int) $one_way);
+
         $headers = array(
             'Method: POST',
             'Connection: Keep-Alive',
@@ -76,7 +92,10 @@ class NTLMSoapClient extends SoapClient
         curl_setopt($this->ch, CURLOPT_POSTFIELDS, $request);
         curl_setopt($this->ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
         curl_setopt($this->ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC | CURLAUTH_NTLM);
-        curl_setopt($this->ch, CURLOPT_USERPWD, $this->user.':'.$this->password);
+
+        if (null !== $this->user && null !== $this->password) {
+            curl_setopt($this->ch, CURLOPT_USERPWD, $this->user.':'.$this->password);
+        }
 
         $response = curl_exec($this->ch);
 
@@ -90,7 +109,7 @@ class NTLMSoapClient extends SoapClient
             );
         }
 
-        return $response;
+        return $return_response ? $response : null;
     }
 
     /**
