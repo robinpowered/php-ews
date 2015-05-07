@@ -60,7 +60,7 @@ class EWSType_PushSubscriptionRequestType extends EWSType
      *
      * @var string
      */
-    public $Url;
+    public $URL;
 
     /**
      * Represents an event bookmark in the mailbox events table.
