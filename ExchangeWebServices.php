@@ -1188,16 +1188,19 @@ class ExchangeWebServices
      */
     protected function initializeSoapClient()
     {
-        $this->soap = new NTLMSoapClient_Exchange(
-            dirname(__FILE__).'/wsdl/services.wsdl',
-            array(
-                'user' => $this->username,
-                'password' => $this->password,
-                'version' => $this->version,
-                'location' => 'https://'.$this->server.'/EWS/Exchange.asmx',
-                'impersonation' => $this->impersonation,
-            )
-        );
+        // Only initialize if it hasn't yet been initialized
+        if (null === $this->soap) {
+            $this->soap = new NTLMSoapClient_Exchange(
+                dirname(__FILE__).'/wsdl/services.wsdl',
+                array(
+                    'user' => $this->username,
+                    'password' => $this->password,
+                    'version' => $this->version,
+                    'location' => 'https://'.$this->server.'/EWS/Exchange.asmx',
+                    'impersonation' => $this->impersonation,
+                )
+            );
+        }
 
         return $this->soap;
     }
