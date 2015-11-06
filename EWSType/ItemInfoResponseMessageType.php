@@ -7,10 +7,8 @@
  * Represents the status and result of a single item operation request.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_ItemInfoResponseMessageType extends EWSType
+class EWSType_ItemInfoResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Currently unused and reserved for future use.

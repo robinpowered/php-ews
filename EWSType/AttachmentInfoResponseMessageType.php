@@ -8,10 +8,8 @@
  * request.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_AttachmentInfoResponseMessageType extends EWSType
+class EWSType_AttachmentInfoResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Contains the items or files that are attached to an item in the Exchange

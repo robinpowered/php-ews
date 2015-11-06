@@ -7,10 +7,8 @@
  * Defines the status and result of a ResolveNames operation request.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_ResolveNamesResponseMessageType extends EWSType
+class EWSType_ResolveNamesResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Currently unused and reserved for future use.

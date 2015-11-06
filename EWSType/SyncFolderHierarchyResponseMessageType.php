@@ -8,10 +8,8 @@
  * request.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_SyncFolderHierarchyResponseMessageType extends EWSType
+class EWSType_SyncFolderHierarchyResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Contains a sequence array of change types that represent the types of
