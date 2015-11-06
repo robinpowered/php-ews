@@ -7,10 +7,8 @@
  * Represents the status and result of a single FindItem operation request.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_FindItemResponseMessageType extends EWSType
+class EWSType_FindItemResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Currently unused and reserved for future use.

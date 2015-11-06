@@ -7,10 +7,8 @@
  * Defines the status and result of a single DisconnectPhoneCall request.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType
  */
-class EWSType_DisconnectPhoneCallResponseMessageType extends EWSType
+class EWSType_DisconnectPhoneCallResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Currently unused and reserved for future use.

@@ -7,10 +7,8 @@
  * Represents the response for the GetMessageTrackingReport operation.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_GetMessageTrackingReportResponseMessageType extends EWSType
+class EWSType_GetMessageTrackingReportResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Currently unused and reserved for future use.

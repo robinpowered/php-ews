@@ -7,10 +7,8 @@
  * Represents service configuration settings.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_ServiceConfigurationResponseMessageType extends EWSType
+class EWSType_ServiceConfigurationResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Currently unused and reserved for future use.

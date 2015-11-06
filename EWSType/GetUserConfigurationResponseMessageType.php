@@ -7,10 +7,8 @@
  * Represents a response that returns a user configuration object.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_GetUserConfigurationResponseMessageType extends EWSType
+class EWSType_GetUserConfigurationResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Currently unused and reserved for future use.

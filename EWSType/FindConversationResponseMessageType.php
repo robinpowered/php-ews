@@ -7,10 +7,8 @@
  * Defines a response to a FindConversation Operation request.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_FindConversationResponseMessageType extends EWSType
+class EWSType_FindConversationResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Contains an array of conversations.

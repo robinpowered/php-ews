@@ -7,10 +7,8 @@
  * Represents the status and result of a single GetEvents operation request.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_GetEventsResponseMessageType extends EWSType
+class EWSType_GetEventsResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Currently unused and reserved for future use.

@@ -8,10 +8,8 @@
  * item.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_ExportItemsResponseMessageType extends EWSType
+class EWSType_ExportItemsResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Contains the contents of an exported item.

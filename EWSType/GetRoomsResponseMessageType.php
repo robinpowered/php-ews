@@ -7,10 +7,8 @@
  * Represents the response to a GetRooms operation request.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType
  */
-class EWSType_GetRoomsResponseMessageType extends EWSType
+class EWSType_GetRoomsResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Currently unused and reserved for future use.

@@ -8,10 +8,8 @@
  * request.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType
  */
-class EWSType_GetSharingFolderResponseMessageType extends EWSType
+class EWSType_GetSharingFolderResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Currently unused and reserved for future use.

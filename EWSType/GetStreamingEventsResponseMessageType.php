@@ -8,10 +8,8 @@
  * request.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_GetStreamingEventsResponseMessageType extends EWSType
+class EWSType_GetStreamingEventsResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Provides a text description of the status of a streaming subscription.

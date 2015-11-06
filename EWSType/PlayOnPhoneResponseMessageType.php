@@ -7,10 +7,8 @@
  * Defines the response to a request to play a voice mail over the telephone.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_PlayOnPhoneResponseMessageType extends EWSType
+class EWSType_PlayOnPhoneResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Currently unused and reserved for future use.

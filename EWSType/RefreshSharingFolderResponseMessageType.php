@@ -7,10 +7,8 @@
  * Class description...
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_RefreshSharingFolderResponseMessageType extends EWSType
+class EWSType_RefreshSharingFolderResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Currently unused and reserved for future use.

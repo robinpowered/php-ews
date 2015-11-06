@@ -7,10 +7,8 @@
  * Defines a response to a GetInboxRules operation request.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_GetInboxRulesResponseType extends EWSType
+class EWSType_GetInboxRulesResponseType extends EWSType_ResponseMessageType
 {
     /**
      * Currently unused and reserved for future use.

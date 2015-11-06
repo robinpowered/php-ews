@@ -7,10 +7,8 @@
  * Represents the status and result of a single ExpandDL operation request.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_ExpandDLResponseMessageType extends EWSType
+class EWSType_ExpandDLResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Represents the next denominator to use for the next request when doing\

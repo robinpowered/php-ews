@@ -7,10 +7,8 @@
  * the status and results of a request to upload a single mailbox item.
  *
  * @package php-ews\Types
- *
- * @todo Extend EWSType_ResponseMessageType.
  */
-class EWSType_UploadItemsResponseMessageType extends EWSType
+class EWSType_UploadItemsResponseMessageType extends EWSType_ResponseMessageType
 {
     /**
      * Currently unused and reserved for future use.
